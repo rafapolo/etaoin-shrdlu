@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="js/etaoinshrdlu.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon" />
+        <script src="js/jquery-ui-1.8.13.drag.min.js" type="text/javascript"></script>
+        <script src="js/colorpicker.min.js" type="text/javascript"></script>
+        <title>ETAOIN SHRDLU</title>
+        <script>
+            $(document).ready(function(){
+                var params = new URLSearchParams(window.location.search);
+                var fontClass = params.get('font');
+                if (fontClass) {
+                    var fontName = fontClass.toLowerCase();
+                    $("#board").addClass(fontName);
+                    document.title = "ETAOIN SHRDLU / " + fontClass.toUpperCase();
+                }
+
+                $("#editor").draggable();
+
+                $('#colorSelector').ColorPicker({
+                    color: '#33ff00',
+                    livePreview: true,
+                    onChange: function (hsb, hex, rgb) {
+                        $('#colorSelector').css('backgroundColor', '#' + hex);
+                        $('#text').css('color', '#' + hex);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <p class="nofuturebold-bold header-title"><a href="index.html">INDEX</a> /</p>
+            <div id="editor">
+                <div id="colorSelector"></div>
+                <input id="editor-text" type="text" value="a" maxlength="30">
+                <input id="editor-plus" type="button" value="+">
+                <input id="editor-minus" type="button" value="-">
+                <span id="editor-saveable">
+                    <span class="separator">|</span>
+                    <input id="editor-save" type="button" value="Save">
+                </span>
+                <span id="editor-short">
+                    <span class="separator">|</span>
+                    <span id="editor-link"></span>
+                </span>
+            </div>
+            <div id="board">
+                <div id="abc"></div>
+                <span id="text">a</span>
+            </div>
+            <div class="query"><a href="about.html">/ ?</a></div>
+            <div class="background">
+                eta oin
+                <span>&nbsp;</span>shrd lu
+                <span>&nbsp;&nbsp;fundidora<br/></span>
+                de tipos
+            </div>
+        </div>
+    </body>
+</html>

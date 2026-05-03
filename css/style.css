@@ -1,0 +1,121 @@
+/* Fonts */
+@font-face { font-family: Background-Font; src: url('../fonts/background-font.otf'); }
+@font-face { font-family: PLOTTER-Light; src: url('../fonts/PLOTTER-Light.otf'); }
+.plotter-light { font-family: PLOTTER-Light; }
+@font-face { font-family: TemposNoia-mono; src: url('../fonts/TemposNoia-mono.otf'); }
+.temposnoia-mono { font-family: TemposNoia-mono; }
+@font-face { font-family: munari; src: url('../fonts/munari.otf'); }
+.munari { font-family: munari; }
+@font-face { font-family: GRIDN; src: url('../fonts/GRIDN.otf'); }
+.gridn { font-family: GRIDN; }
+@font-face { font-family: RASTER; src: url('../fonts/RASTER.otf'); }
+.raster { font-family: RASTER; }
+@font-face { font-family: Gestual-Bold; src: url('../fonts/Gestual-Bold.otf'); }
+.gestual-bold { font-family: Gestual-Bold; }
+@font-face { font-family: Mangalarga; src: url('../fonts/Mangalarga.otf'); }
+.mangalarga { font-family: Mangalarga; }
+@font-face { font-family: Gestual; src: url('../fonts/Gestual.otf'); }
+.gestual { font-family: Gestual; }
+@font-face { font-family: Umwelt-italic-29-11; src: url('../fonts/Umwelt-italic-29-11.otf'); }
+.umwelt-italic-29-11 { font-family: Umwelt-italic-29-11; }
+@font-face { font-family: Umwelt-Medium-29-11; src: url('../fonts/Umwelt-Medium-29-11.otf'); }
+.umwelt-medium-29-11 { font-family: Umwelt-Medium-29-11; }
+@font-face { font-family: poesis; src: url('../fonts/poesis.otf'); }
+.poesis { font-family: poesis; }
+@font-face { font-family: lostfound; src: url('../fonts/lostfound.otf'); }
+.lostfound { font-family: lostfound; }
+@font-face { font-family: Blast; src: url('../fonts/Blast.otf'); }
+.blast { font-family: Blast; }
+@font-face { font-family: geosans_bold; src: url('../fonts/geosans_bold.otf'); }
+.geosans_bold { font-family: geosans_bold; }
+@font-face { font-family: neugothic; src: url('../fonts/neugothic.otf'); }
+.neugothic { font-family: neugothic; }
+@font-face { font-family: geosans_reg; src: url('../fonts/geosans_reg.otf'); }
+.geosans_reg { font-family: geosans_reg; }
+@font-face { font-family: NoFuture; src: url('../fonts/NoFuture.otf'); }
+.nofuture { font-family: NoFuture; }
+@font-face { font-family: Chucro; src: url('../fonts/Chucro.otf'); }
+.chucro { font-family: Chucro; }
+@font-face { font-family: NoFutureBold-Bold; src: url('../fonts/NoFutureBold-Bold.otf'); }
+.nofuturebold-bold { font-family: NoFutureBold-Bold; }
+@font-face { font-family: geosans; src: url('../fonts/geosans.otf'); }
+.geosans { font-family: geosans; }
+@font-face { font-family: tremfantasma; src: url('../fonts/tremfantasma.otf'); }
+.tremfantasma { font-family: tremfantasma; }
+@font-face { font-family: Dialetica; src: url('../fonts/Dialetica.otf'); }
+.dialetica { font-family: Dialetica; }
+@font-face { font-family: machineman; src: url('../fonts/machineman.otf'); }
+.machineman { font-family: machineman; }
+@font-face { font-family: Cavalo; src: url('../fonts/Cavalo.otf'); }
+.cavalo { font-family: Cavalo; }
+@font-face { font-family: Ettore; src: url('../fonts/Ettore.otf'); }
+.ettore { font-family: Ettore; }
+@font-face { font-family: Pina; src: url('../fonts/Pina.otf'); }
+.pina { font-family: Pina; }
+@font-face { font-family: Maggie; src: url('../fonts/Maggie.otf'); }
+.maggie { font-family: Maggie; }
+@font-face { font-family: fumace; src: url('../fonts/fumace.otf'); }
+.fumace { font-family: fumace; }
+@font-face { font-family: RealGrotesk; src: url('../fonts/RealGrotesk.otf'); }
+.realgrotesk { font-family: RealGrotesk; }
+@font-face { font-family: Xavier; src: url('../fonts/Xavier.otf'); }
+.xavier { font-family: Xavier; }
+@font-face { font-family: GRIDW; src: url('../fonts/GRIDW.otf'); }
+.gridw { font-family: GRIDW; }
+@font-face { font-family: PlotterDisplay; src: url('../fonts/PlotterDisplay.otf'); }
+.plotterdisplay { font-family: PlotterDisplay; }
+
+/* Main Styles */
+body { font-size: 63px; font-family: NoFuture; margin: 0 40px }
+a { color: black; text-decoration: none }
+#editor { background-color: lightgray; cursor: move; box-shadow: 10px 10px 5px #888; border: 1px solid gray; position: fixed; left: 430px; top: 33px; opacity: 0.8; font-size: 16px; font-family: arial; padding: 10px }
+#container { text-align: justify; max-width: 1220px; margin: 10px auto }
+.background { font-family: Background-Font; width: 100vw; font-size: 15vw; color: lime; position: fixed; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.query { position: fixed; bottom: 0; font-family: NoFutureBold-Bold; left: 90% }
+.about { display: inline; margin-bottom: 5px; font-size: 19px; font-family: arial; width: 48% }
+#abc { width: 500px; font-size: 45px; margin-top: 0; line-height: 55px; float: left; text-align: justify }
+a.shortLink { color: blue; text-decoration: underline }
+#text { font-size: 200px; margin-left: 200px; top: 300px; line-height: 0; position: absolute; white-space: nowrap; padding-right: 50px }
+#colorSelector { width: 25px; height: 25px; background: url(../images/select.png) center; background-color: black; float: left; margin-right: 8px; cursor: pointer }
+
+/* Font Grid (Index) */
+.font-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px 0 }
+.font-item { padding: 20px; border: 1px solid #ccc; text-align: center; cursor: pointer; transition: all 0.2s; position: relative }
+.font-item:hover { background: #f0f0f0 }
+.font-item:hover::after { content: ""; position: absolute; bottom: -1px; left: -1px; right: -1px; height: 3px; background: black }
+.font-item a { color: black; text-decoration: none; display: block }
+.font-name { font-size: 14px; margin-bottom: 10px }
+.font-preview { font-size: 36px }
+.header-title { line-height: 110px; margin-top: 0; margin-bottom: 20px; display: inline }
+#editor-text { width: 170px }
+#editor-saveable span { color: gray; font-size: 12px }
+#editor-short { display: none; color: gray; font-family: arial; font-size: 12px }
+.separator { color: gray; font-size: 12px; margin: 0 5px }
+.header-title-about { line-height: 0; margin-bottom: 40px }
+.about-left { float: left }
+.about-right { float: right }
+
+/* Colorpicker */
+#Picker { width: 356px; height: 256px; position: absolute; background-color: #fff; border: 1px solid #999; display: none; padding: 10px; }
+#Custom { float: left; width: 256px; height: 256px; }
+#HSB { float: left; margin-left: 10px; width: 90px; height: 256px; }
+#CustomMap { width: 256px; height: 256px; background: url(../images/custom_background.png) no-repeat; position: relative; }
+#CustomMapOverlay { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(../images/colorpicker_overlay.png); }
+#CustomPointer { width: 7px; height: 7px; position: absolute; border: 1px solid #000; background: none; top: 0; left: 0; cursor: crosshair; }
+#SBMap { width: 90px; height: 256px; background: url(../images/colorpicker_hsb_b.png); position: relative; cursor: crosshair; }
+#SBMapOverlay { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: url(../images/colorpicker_hsb_h.png); }
+#SBPointer { width: 7px; height: 7px; position: absolute; border: 1px solid #000; background: none; top: 0; left: 0; cursor: crosshair; }
+#Custom .input { float: left; clear: left; margin-top: 5px; }
+#Custom label { float: left; width: 30px; font-family: arial, sans-serif; font-size: 12px; color: #666; padding-top: 2px; }
+#Custom input { float: left; width: 60px; font-family: arial, sans-serif; font-size: 12px; padding: 2px; border: 1px solid #999; }
+#Custom .inputR { clear: left; }
+#Custom .hex { margin-top: 5px; }
+#Custom .hex input { width: 70px; }
+#SB { width: 90px; height: 180px; margin-top: 10px; position: relative; }
+#SBMapH { width: 90px; height: 180px; background: url(../images/colorpicker_hsb_h.png); position: relative; }
+#SBPointerH { width: 7px; height: 7px; position: absolute; border: 1px solid #000; background: none; top: 0; left: 0; cursor: crosshair; }
+#Custom .button { margin-top: 10px; clear: left; float: left; width: 80px; height: 20px; border: 1px solid #999; background: url(../images/colorpicker_submit.png); cursor: pointer; }
+#Custom .button:hover { background-position: 0 -20px; }
+#Custom .hex label { width: 30px; font-family: arial, sans-serif; font-size: 12px; color: #666; }
+#Custom .hex input { width: 70px; border: 1px solid #999; }
+#Submit { display: none; }
