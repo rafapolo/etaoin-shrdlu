@@ -119,3 +119,24 @@ a.shortLink { color: blue; text-decoration: underline }
 #Custom .hex label { width: 30px; font-family: arial, sans-serif; font-size: 12px; color: #666; }
 #Custom .hex input { width: 70px; border: 1px solid #999; }
 #Submit { display: none; }
+/* Mobile */
+@media (max-width: 700px) {
+    body { font-size: 40px; margin: 0 16px }
+    #container { margin: 0 auto; overflow-x: hidden }
+    .header-title { line-height: 80px; margin-bottom: 0 }
+    .header-title-about { line-height: 80px; margin-bottom: 0; display: block; margin-top: 0 }
+    .font-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 12px 0 96px }
+    .font-item { padding: 16px 6px }
+    .font-name { font-size: 12px; overflow-wrap: anywhere }
+    .font-preview { font-size: 32px }
+    .query { left: auto; right: 16px; bottom: 4px }
+    #abc { width: 100%; float: none; font-size: 26px; line-height: 34px }
+    #text { margin-left: 0 !important; position: static; display: block; margin: 24px 0 140px; line-height: 1.1; white-space: normal; overflow-wrap: anywhere; padding-right: 0; font-size: 120px }
+    #editor { left: 8px; right: 8px; top: auto; bottom: 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px; opacity: 0.95; box-shadow: 0 4px 12px rgba(0,0,0,.3) }
+    #editor-text { flex: 1; min-width: 0; font-size: 16px }
+    #editor input[type=button] { font-size: 16px; min-width: 40px; min-height: 36px }
+    #colorSelector { float: none; margin-right: 0; flex: none; width: 36px; height: 36px }
+    .colorpicker { position: fixed !important; left: 8px !important; top: auto !important; bottom: 120px; z-index: 10 }
+    .about, .about-left, .about-right { display: block; float: none; width: auto; font-size: 16px; line-height: 1.5; margin-bottom: 32px }
+    .about-right { margin-bottom: 96px }
+}
